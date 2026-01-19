@@ -16,7 +16,7 @@ import { LinkPreset } from "./types/config";
  */
 
 // 设置浏览器语言 ('zh', 'en', ...)
-const SITE_LANG = "en";
+const SITE_LANG = "zh";
 
 // 设置网站时区 (from -12 to 12)
 const SITE_TIMEZONE = 8; // UTC+8
@@ -27,7 +27,7 @@ export const siteConfig: SiteConfig = {
     // 站点 URL（以斜杠结尾）
     siteURL: "https://twilight.spr-aachen.com/", // 请替换为你的站点 URL 并以斜杠结尾
     // 站点标题
-    title: "Twilight",
+    title: "wtt'blog",
     // 站点副标题
     subtitle: "Blog Template",
     // 语言配置
@@ -104,10 +104,10 @@ export const siteConfig: SiteConfig = {
                 // 在主页显示文本
                 enable: true,
                 // 主标题
-                title: "Twilight",
+                title: "wtt'blog",
                 // 副标题，支持单个字符串或字符串数组
                 subtitle: [
-                    "Illuminate Our Paths",
+                    "passion",
                 ],
                 // 副标题打字机效果
                 typewriter: {
@@ -348,7 +348,8 @@ export const profileConfig: ProfileConfig = {
     // 头像配置 (相对于 /public 目录)
     avatar: "/assets/images/avatar.jpg",
     // 信息配置
-    name: "Twilight",
+    name: "Twilight"
+    ,
     // 简介配置
     bio: "Hi",
     // 链接配置
