@@ -20,7 +20,6 @@ Tip: For the things that are not mentioned in this guide, you may find the answe
 title: My First Blog Post
 published: 2020-02-02
 description: This is the first post of my new Astro blog.
-cover: ./cover.jpg
 tags: [Foo, Bar]
 category: Front-end
 draft: false

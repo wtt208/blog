@@ -1,0 +1,16 @@
+---
+title: Markdown Tutorial
+published: 2026-01-19
+pinned: true
+description: A simple example of a Markdown blog post.
+tags: [Markdown, Blogging]
+category: Examples
+
+author: wtt
+draft: false
+date: 2026-01-19
+image:
+  url: './cover.jpg'
+  alt: '文章封面'
+
+---

@@ -2,7 +2,7 @@
 
 ## How to Apply
 
-Please send your website information to: xxx@xxx.com
+Please send your website information to: 3338236389@qq.com
 
 Email Subject:
 ```

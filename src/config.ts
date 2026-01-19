@@ -62,7 +62,7 @@ export const siteConfig: SiteConfig = {
     // 主题色配置
     themeColor: {
         // 主题色的默认色相 (范围从 0 到 360。例如：红色：0，青色：200，蓝绿色：250，粉色：345)
-        hue: 255,
+        hue: 345,
         // 对访问者隐藏主题色选择器
         fixed: false,
     },
@@ -76,14 +76,13 @@ export const siteConfig: SiteConfig = {
         src: {
             // 桌面壁纸图片 (相对于 /public 目录; 支持单张图片或图片数组，当数组长度 > 1 时自动启用轮播)
             desktop: [
-                "/assets/images/desktopWallpaper_1.jpg",
-                "/assets/images/desktopWallpaper_2.jpg",
-                "/assets/images/desktopWallpaper_3.jpg",
+                "/assets/images/desktopWallpaper_1.jpg"
+        
             ],
             // 移动壁纸图片 (相对于 /public 目录; 支持单张图片或图片数组，当数组长度 > 1 时自动启用轮播)
             mobile: [
-                "/assets/images/mobileWallpaper_1.jpg",
-                "/assets/images/mobileWallpaper_2.jpg",
+                "/assets/images/mobileWallpaper_1.jpg"
+                
             ],
         },
         // 壁纸位置 ('top' | 'center' | 'bottom')
@@ -206,12 +205,10 @@ export const navBarConfig: NavBarConfig = {
             icon: "material-symbols:person",
             description: "A collection of my creative works and experiences",
             children: [
-                LinkPreset.Projects,
+        
                 LinkPreset.Skills,
                 LinkPreset.Timeline,
-                LinkPreset.Diary,
-                LinkPreset.Albums,
-                LinkPreset.Anime,
+                LinkPreset.Diary
             ],
         },
         LinkPreset.Friends,
@@ -306,7 +303,7 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
             // 组件类型
             type: "statistics", // 文章统计组件
             // 是否启用该组件
-            enable: true,
+            enable: false,
             // 组件所属侧边栏
             side: "right",
             // 组件显示顺序 (数字越小越靠前)
@@ -348,7 +345,7 @@ export const profileConfig: ProfileConfig = {
     // 头像配置 (相对于 /public 目录)
     avatar: "/assets/images/avatar.jpg",
     // 信息配置
-    name: "Twilight"
+    name: "wtt"
     ,
     // 简介配置
     bio: "Hi",
@@ -357,7 +354,7 @@ export const profileConfig: ProfileConfig = {
         {
             name: "GitHub",
             icon: "fa6-brands:github",
-            url: "https://github.com/Spr-Aachen/Twilight",
+            url: "https://https://github.com/wtt208/blog",
         },
     ],
 };
@@ -411,7 +408,7 @@ export const postConfig: PostConfig = {
     // 评论配置
     comment: {
         // 启用评论功能
-        enable: false,
+        enable: true,
         // Twikoo 评论系统配置
         twikoo: {
             // 环境 ID
@@ -429,7 +426,7 @@ export const postConfig: PostConfig = {
 // 页脚配置
 export const footerConfig: FooterConfig = {
     // 启用 Footer HTML 注入功能
-    enable: false,
+    enable: true,
     // 自定义 HTML 内容，用于添加备案号等信息
     customHtml: "",
 };
@@ -489,7 +486,7 @@ export const particleConfig: ParticleConfig = {
 // 音乐播放器配置
 export const musicPlayerConfig: MusicPlayerConfig = {
     // 启用音乐播放器功能
-    enable: true,
+    enable: false,
     // 默认模式 ("meting" API | "local" 本地)
     mode: "meting",
     // meting 模式专属配置
@@ -550,9 +547,9 @@ export const pioConfig: import("./types/config").PioConfig = {
         welcome: "Welcome!",
         // 触摸提示
         touch: [
-            "What are you doing?",
-            "Stop touching me!",
-            "Don't bully me like that!",
+            "滚去学习",
+            "学一分钟等于学60秒",
+            "别摸鱼",
             "(｡í _ ì｡)",
         ],
         // 首页提示

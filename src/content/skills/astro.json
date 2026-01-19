@@ -1,7 +1,7 @@
 {
-    "name": "Astro",
-    "description": "A modern static site generator supporting multi-framework integration.",
-    "icon": "logos:astro-icon",
+    "name": "Svelte",
+    "description": "A compiler-based UI framework.",
+    "icon": "logos:svelte-icon",
     "category": "frontend",
     "level": "beginner",
     "experience": {
@@ -11,5 +11,5 @@
     "projects": [
         "Twilight"
     ],
-    "color": "#BC52EE"
+    "color": "#FF3E00"
 }

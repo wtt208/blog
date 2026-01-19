@@ -1,5 +1,5 @@
 {
-    "title": "Twilight Blog Template",
+    "title": "wtt Blog",
     "description": "A CMS integrated blog theme built with Astro framework.",
     "image": "",
     "category": "website",
@@ -10,8 +10,8 @@
     ],
     "status": "in-progress",
     "liveDemo": "https://twilight.spr-aachen.com",
-    "sourceCode": "https://github.com/Spr-Aachen/Twilight",
-    "startDate": "2025-10-01",
+    "sourceCode": "https://github.com/wtt208/blog",
+    "startDate": "2026-01-19",
     "endDate": "",
     "featured": true,
     "tags": [
