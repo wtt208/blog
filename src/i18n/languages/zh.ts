@@ -138,7 +138,7 @@ export const zh: Translation = {
     [Key.timelineWorkPositions]: "工作岗位数",
     [Key.timelineCurrentRole]: "当前状态",
     [Key.timelineEmployed]: "在职",
-    [Key.timelineAvailable]: "可入职",
+    [Key.timelineAvailable]: "上学",
 
     // 短文页面
     [Key.diary]: "日记",

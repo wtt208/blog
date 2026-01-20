@@ -1,6 +1,6 @@
 # About This Site
 
-for wtt to learn more
+let wtt to learn more
 
 
 

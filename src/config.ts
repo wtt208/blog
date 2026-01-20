@@ -206,7 +206,7 @@ export const navBarConfig: NavBarConfig = {
             description: "A collection of my creative works and experiences",
             children: [
         
-                LinkPreset.Skills,
+                // LinkPreset.Skills,
                 LinkPreset.Timeline,
                 LinkPreset.Diary
             ],
@@ -408,7 +408,7 @@ export const postConfig: PostConfig = {
     // 评论配置
     comment: {
         // 启用评论功能
-        enable: true,
+        enable: false,
         // Twikoo 评论系统配置
         twikoo: {
             // 环境 ID
