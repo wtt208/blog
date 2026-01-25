@@ -233,7 +233,7 @@ set disable-randomization on
 
 | partial RELRO                | Full RELRO                                                                                   |
 | ---------------------------- | -------------------------------------------------------------------------------------------- |
-| `.got`：只读 <br>`.got.plt` ：可写 | `.got.plt` 被链接器合并进 `.got`，所有原本属于 `.got.plt` 的条目都被放进 .got`**  **但不会存储dl_resolve()和linkmap信息** |
+| `.got`：只读 <br>`.got.plt` ：可写 | `.got.plt` 被链接器合并进 `.got`，所有原本属于 `.got.plt` 的条目都被放进 .got **但不会存储dl_resolve()和linkmap信息** |
 
 ### 3 .symtab/ .dynsym
 `.symtab` ：给链接器和调试器用的完整符号表，用于静态链接，包含全部符号，对应strtab  

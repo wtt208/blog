@@ -1,5 +1,5 @@
 {
-    "title": "pwn.college",
+    "title": "pwn_college",
     "description": "learn about pwn",
     "type": "project",
     "startDate": "2025-7-01",
@@ -25,5 +25,5 @@
     ],
     "icon": "material-symbols:code",
     "color": "#7C3AED",
-    "featured": true
+    "featured": true 
 }
