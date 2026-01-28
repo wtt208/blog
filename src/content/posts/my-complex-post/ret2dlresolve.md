@@ -259,6 +259,5 @@ set disable-randomization on
 ### 5 栈传参
 调用函数的时候，形参`从右往左`push进栈 然后再call func()
 ![](images/Pasted%20image%2020260120141448.png)
-
-参考文章：
+## 0x70 参考链接
 [https://sp4n9x.github.io/2020/08/15/ret2_dl_runtime_resolve](https://sp4n9x.github.io/2020/08/15/ret2_dl_runtime_resolve%E8%AF%A6%E8%A7%A3/)

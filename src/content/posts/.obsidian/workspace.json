@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 209.5
+    "width": 200
   },
   "right": {
     "id": "51b17301c77ffc24",
@@ -186,18 +186,18 @@
   },
   "active": "4baa4c79d2d407e6",
   "lastOpenFiles": [
+    "my-complex-post/EZpython.md",
+    "my-complex-post/images/cff292a67ea1cb029b61997dfda5a785.png",
+    "my-complex-post/ret2dlresolve.md",
+    "my-complex-post/format_string.md",
+    "my-complex-post/images/de2be2a9dea7eb76ad439f3b10966c9a.png",
+    "my-complex-post/images/14bbe1ff91354ee40824d7118122b4ef.png",
+    "my-complex-post/images/Pasted image 20260127232142.png",
+    "my-complex-post/images/Pasted image 20260127200755.png",
+    "my-complex-post/images/Pasted image 20260127200706.png",
     "my-complex-post/images/Pasted image 20260120152434.png",
     "my-complex-post/images/Pasted image 20260120150033.png",
     "my-complex-post/images/Pasted image 20260120145915.png",
-    "my-complex-post/images/Pasted image 20260120145357.png",
-    "my-complex-post/images/Pasted image 20260120145011.png",
-    "my-complex-post/images/Pasted image 20260120144942.png",
-    "my-complex-post/images/Pasted image 20260120141448.png",
-    "my-complex-post/images/dl_resolve.png",
-    "my-complex-post/images/Pasted image 20260120135457.png",
-    "my-complex-post/images/Pasted image 20260120135410.png",
-    "my-complex-post/images/avatar.jpg.jpg",
-    "my-complex-post/ret2dlresolve.md",
-    "my-complex-post/format_string.md"
+    "my-complex-post/images/Pasted image 20260120145357.png"
   ]
 }
