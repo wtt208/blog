@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "ret2dlresolve"
             }
+          },
+          {
+            "id": "8080b0566e4c8f27",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "my-complex-post/babygame.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "babygame"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -164,13 +179,23 @@
               "icon": "lucide-list",
               "title": "Outline of ret2dlresolve"
             }
+          },
+          {
+            "id": "9fbd2875ffed02aa",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -184,20 +209,28 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4baa4c79d2d407e6",
+  "active": "8080b0566e4c8f27",
   "lastOpenFiles": [
+    "my-complex-post/chuantongxiangyan.md",
+    "my-complex-post/babygame.md",
+    "未命名.canvas",
     "my-complex-post/EZpython.md",
-    "my-complex-post/images/cff292a67ea1cb029b61997dfda5a785.png",
-    "my-complex-post/ret2dlresolve.md",
     "my-complex-post/format_string.md",
+    "my-complex-post/ret2dlresolve.md",
+    "my-complex-post/template/note attribute.md",
+    "my-complex-post/template",
+    "my-complex-post/images/Pasted image 20260202163659.png",
+    "my-complex-post/images/Pasted image 20260129211415.png",
+    "未命名.md",
+    "未命名 2.md",
+    "未命名 1.md",
+    "my-complex-post/images/cff292a67ea1cb029b61997dfda5a785.png",
     "my-complex-post/images/de2be2a9dea7eb76ad439f3b10966c9a.png",
     "my-complex-post/images/14bbe1ff91354ee40824d7118122b4ef.png",
     "my-complex-post/images/Pasted image 20260127232142.png",
     "my-complex-post/images/Pasted image 20260127200755.png",
     "my-complex-post/images/Pasted image 20260127200706.png",
     "my-complex-post/images/Pasted image 20260120152434.png",
-    "my-complex-post/images/Pasted image 20260120150033.png",
-    "my-complex-post/images/Pasted image 20260120145915.png",
-    "my-complex-post/images/Pasted image 20260120145357.png"
+    "my-complex-post/images/Pasted image 20260120150033.png"
   ]
 }

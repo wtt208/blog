@@ -5,7 +5,7 @@ pinned: false
 description: python reverse with btea()
 tags:
   - reverse
-category: note
+category: ctf
 author: wtt
 draft: false
 date: 2026-01-28
