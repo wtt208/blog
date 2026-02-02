@@ -1,5 +1,5 @@
 ---
-title:
+title: babygame
 published: 2026-02-02
 pinned: false
 description: ciscn 2025 -reverse

@@ -53,7 +53,7 @@ Q:可以通过写got的方法 不需要libc_base 只需要覆盖已经延迟绑�
 A:不行，一次性写不完got_write ,libc_offset =0x1148e0  ；one_gadget_libc_offset = 0xebc81
 ，修改不了这么多字节 如果写坏了got会导致整个程序流崩溃
 
-Q:通过%xxc%5$n+p64(got_exit)的形式直接写Got表？  
+Q:通过%xxc%5\$n+p64(got_exit)的形式直接写Got表？  
 A:不行，因为payload长度限制，%c最多输出99(0x63)个字节，onegadget_libc_addr 高位地址一般是0x7f ，写不到这么多，就算爆破尝试到高位小于0x63也没用,因为其他低位也有可能会大于0x63  
 
 Q:那么爆破一个每字节地址都小于0x63的libc地址？  
@@ -63,13 +63,13 @@ A:不行，因为这个libc 的每个onegadget_libc_addr的字节都大于0x63�
 寻找ptr_addr，其本来就指向栈上的一个地址（一级指针）  
 此处选取rsp+0x38的地址作为ptr_addr  
 ![](images/Pasted%20image%2020260129211415.png)
-用”%5$hn“+p64(ptr_addr)构造二级指针 (输出0字节到【ptr_addr】写入4字节)  
+用”%5\$hn“+p64(ptr_addr),构造二级指针 (输出0字节到【ptr_addr】写入4字节)  
 修改为【ptr_addr】=  0x7fff37560000    
-然后再通过”%11$hn“去修改【0x7fff37560000】为got_exit  
-再用”%1c%5$hn“+p64(ptr_addr) 【ptr_addr】=  0x7fff37560001  
-`不能用%hhn` 因为%hn加上%xc%5$hn刚好8字节   
+然后再通过”%11\$hn“去修改【0x7fff37560000】为got_exit  
+再用”%1c%5\$hn“+p64(ptr_addr) 【ptr_addr】=  0x7fff37560001  
+`不能用%hhn` 因为%hn加上%xc%5\$hn刚好8字节   
 以上为一个循环，将【0x7fff37560000】写为got_exit   
-通过”%xc%x$hn“每2字节去写one_gadget（one_gadget地址6字节需要这样写3次）  
+通过”%xc%x\$hn“每2字节去写one_gadget（one_gadget地址6字节需要这样写3次）  
 第二次循环，将【0x7fff37560000】写为got_exit +2 ，继续写one_gadget后2字节  
 第三次循环，将【0x7fff37560000】写为got_exit +4 ，写one_gadget最后2字节  
 

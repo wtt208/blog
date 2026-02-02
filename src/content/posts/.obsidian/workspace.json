@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "my-complex-post/babygame.md",
+                "file": "my-complex-post/chuantongxiangyan.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "babygame"
+              "title": "chuantongxiangyan"
             }
           }
         ],
@@ -211,8 +211,8 @@
   },
   "active": "8080b0566e4c8f27",
   "lastOpenFiles": [
-    "my-complex-post/chuantongxiangyan.md",
     "my-complex-post/babygame.md",
+    "my-complex-post/chuantongxiangyan.md",
     "未命名.canvas",
     "my-complex-post/EZpython.md",
     "my-complex-post/format_string.md",
