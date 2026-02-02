@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "my-complex-post/chuantongxiangyan.md",
+                "file": "my-complex-post/babygame.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "chuantongxiangyan"
+              "title": "babygame"
             }
           }
         ],
@@ -211,13 +211,13 @@
   },
   "active": "8080b0566e4c8f27",
   "lastOpenFiles": [
-    "my-complex-post/babygame.md",
     "my-complex-post/chuantongxiangyan.md",
-    "未命名.canvas",
+    "my-complex-post/babygame.md",
     "my-complex-post/EZpython.md",
-    "my-complex-post/format_string.md",
     "my-complex-post/ret2dlresolve.md",
+    "my-complex-post/format_string.md",
     "my-complex-post/template/note attribute.md",
+    "未命名.canvas",
     "my-complex-post/template",
     "my-complex-post/images/Pasted image 20260202163659.png",
     "my-complex-post/images/Pasted image 20260129211415.png",

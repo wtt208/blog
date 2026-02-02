@@ -1,12 +1,12 @@
 ---
-title:
+title: note attribute
 published: 2026-01-19
 pinned: false
-description:
+description: template
 tags:
   - pwn
 category: note
 author: wtt
-draft: false
+draft: true
 date: 2026-01-19
 ---

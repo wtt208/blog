@@ -2,7 +2,7 @@
 title: chuantongxiangyan
 published: 2026-02-02
 pinned: false
-description: lilacCTF 2026 pwn -fmt
+description: lilacCTF-2026 pwn fmt
 tags:
   - pwn
 category: ctf

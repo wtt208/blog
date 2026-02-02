@@ -2,7 +2,7 @@
 title: EZpython
 published: 2026-01-27
 pinned: false
-description: python reverse with btea()
+description: LilacCTF-2026 python reverse with btea()
 tags:
   - reverse
 category: ctf
