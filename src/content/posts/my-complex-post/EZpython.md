@@ -11,6 +11,7 @@ draft: false
 date: 2026-01-28
 ---
 
+这是LilacCTF-2026的reverse题
 ## 0x10 工具概览
 
 ### 1.`PyInstaller`

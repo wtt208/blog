@@ -12,6 +12,7 @@ date: 2026-02-03
 ---
 
 ## 0x10 题目分析
+这是aliCTF 2026 的web题
 ### 1.打开网页
 打开所给的网址，页面如下
 ![](images/Pasted%20image%2020260203182150.png)
@@ -28,7 +29,8 @@ import puppeteer from 'puppeteer';
 const ADMIN_PASSWORD = crypto.randomBytes(16).toString('hex');
 
 # 机器人带着 admin 登录态的 cookie
-async function runXssVisit(targetUrl: string): Promise<void> {
+async function runXssVisit(targetUrl: string): Promise<void>
+ {
 	# url类型检查 + 正则校验 URL 必须是 http/https
   if (typeof targetUrl !== 'string' || !/^https?:\/\//i.test(targetUrl)) {
     throw new Error('invalid target url');
@@ -147,7 +149,7 @@ async function createSessionForUser(user: UserDoc): Promise<string> {
 ```sql
 SELECT * FROM users WHERE username = 'admin'
 ```
-而 **MongoDB 不用 SQL 字符串**，它用 **JSON 对象** 表示查询条件
+而 **MongoDB 不用 SQL 字符串**，它用 **JSON 对象** 表示查询条件,
 MongoDB 查询对象的通用结构是：`{ 字段名: 查询条件 }`
 ```python
 db.users.findOne({ username: "admin" })
