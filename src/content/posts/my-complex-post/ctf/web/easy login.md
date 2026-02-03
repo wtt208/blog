@@ -15,7 +15,7 @@ date: 2026-02-03
 这是aliCTF 2026 的web题
 ### 1.打开网页
 打开所给的网址，页面如下
-![](images/Pasted%20image%2020260203182150.png)
+![](../../images/Pasted%20image%2020260203182150.png)
 
 ### 2./src/server.ts（关键部分）
 ```python

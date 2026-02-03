@@ -98,9 +98,9 @@ python pyinstxtractor.py main.exe
 生成 `main.exe_extracted` 文件夹
 
 
-![](images/Pasted%20image%2020260127200706.png)
+![](../../images/Pasted%20image%2020260127200706.png)
 
-![](images/Pasted%20image%2020260127200755.png)
+![](../../images/Pasted%20image%2020260127200755.png)
 
 关键文件：
 - `main.pyc` - 主程序
@@ -401,7 +401,7 @@ def a85decode(b, *, foldspaces=False, adobe=False, ignorechars=b" \t\n\r\x0b"):
 
 `从中可以看出MX()字节码被修改 （加密算法被改了）`
 
-![](images/cff292a67ea1cb029b61997dfda5a785.png)
+![](../../images/cff292a67ea1cb029b61997dfda5a785.png)
 MX()被修改为:
 ```python
 def MX(y, z, sum, k, p, e):

@@ -63,5 +63,5 @@ func back() -> void :
 
 放入解密工具分析，得出flag
 注意ECB没有IV ，且没有padding(需要选择nopadding模式)
-![](images/Pasted%20image%2020260202163659.png)
+![](../../images/Pasted%20image%2020260202163659.png)
 得出flag

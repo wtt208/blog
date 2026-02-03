@@ -63,7 +63,7 @@ A:不行，因为这个libc 的每个onegadget_libc_addr的字节都大于0x63�
 ### 4.构造二级指针
 寻找ptr_addr，其本来就指向栈上的一个地址（一级指针）  
 此处选取rsp+0x38的地址作为ptr_addr  
-![](images/Pasted%20image%2020260129211415.png)
+![](../../images/Pasted%20image%2020260129211415.png)
 用”%5\$hn“+p64(ptr_addr),构造二级指针 (输出0字节到【ptr_addr】写入4字节)  
 修改为【ptr_addr】=  0x7fff37560000    
 然后再通过”%11\$hn“去修改【0x7fff37560000】为got_exit  

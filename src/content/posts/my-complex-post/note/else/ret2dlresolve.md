@@ -75,11 +75,10 @@ total = 0x18 (24 bytes)
 #### st_other
 st_other 控制动态链接阶段是否可被外部引用
 
-> [!NOTE]
-> (只看低2位) 
-> ![](images/Pasted%20image%2020260120124735.png)
-> 将other低2位与3(11b) 只要低2位不是00 与3后就不是0,达到st_other !=0效果
-> 而并非只要other!=0 而是要求低2位!=0 (4/8/c都不满足条件)
+
+ !!(只看低2位) 
+![](../../images/Pasted%20image%2020260120124735.png)
+ 将other低2位与3(11b) 只要低2位不是00 与3后就不是0,达到st_other !=0效果,并非只要other!=0 ,而是要求低2位!=0 (4/8/c都不满足条件)
 
 |值|宏|含义|
 |---|---|---|
@@ -121,7 +120,7 @@ eg:/0stdin/0setbuf/0gets/0...
 用于在运行时解析动态库函数的真实地址,并填充到 GOT中,
 传参并不是通过寄存器,而是栈  
 正常的解析流程：通过`延迟绑定`将参数传递给dl_resolve()
-![](images/Pasted%20image%2020260120135410.png)
+![](../../images/Pasted%20image%2020260120135410.png)
 - GOT[0]：保存的是“.dynamic”节的地址
 - GOT[1]：保存的是本模块的ID。link_map结构的地址
 - GOT[2]：保存的是_dl_runtime_resolve()的地址
@@ -137,7 +136,7 @@ eg:/0stdin/0setbuf/0gets/0...
 
 
 内部函数`dl_fixup(link_map_obj, reloc_arg)`
-![](images/Pasted%20image%2020260120133253.png)
+![](../../images/Pasted%20image%2020260120133253.png)
 通过link_map_obj访问“.dynamic”节 ，分别取出动态链接字符串表“.dynstr”、动态链接符号表“.dynsym”、重定位表“.rel.plt”的地址
 
 ## 0x30 linkmap
@@ -164,7 +163,7 @@ struct link_map {
     ...
 ```
 
-![](images/Pasted%20image%2020260120152434.png)
+![](../../images/Pasted%20image%2020260120152434.png)
 
 link_map通过快速索引找到`.dynamic`对应节（.rela.plt .dynsym .dynstr）的地址(实际对应的是addr-8)
 
@@ -189,11 +188,11 @@ typedef struct {
 
 ## 0x50 利用流程
 修改栈上的参数，构造假的.rela.plt 、.dynsym 和.dynstr，将从libc解析到的函数写回`Got表`
-![](images/Pasted%20image%2020260120145011.png)
+![](../../images/Pasted%20image%2020260120145011.png)
 
 ---
 
-![](images/dl_resolve.png)
+![](../../images/dl_resolve.png)
 
 ## 0x60 相关知识
 ### 1. ASLR & PIE
@@ -249,16 +248,16 @@ set disable-randomization on
 `“.interp”`的内容很简单，里面保存的就是一个`字符串`，这个字符串就是可执行文件所需要的动态链接器的路径。在Linux下，可执行文件所需要的动态链接器的路径几乎都是`“/lib/ld-linux.so.2”`,通常是一个软链接.
 
 ### 4 .rela.plt .dynsym .dynstr (x86)
-![](images/Pasted%20image%2020260120145915.png)
+![](../../images/Pasted%20image%2020260120145915.png)
 
 ---
 
 
-![](images/Pasted%20image%2020260120144942.png)
+![](../../images/Pasted%20image%2020260120144942.png)
 
 
 ### 5 栈传参
 调用函数的时候，形参`从右往左`push进栈 然后再call func()
-![](images/Pasted%20image%2020260120141448.png)
+![](../../images/Pasted%20image%2020260120141448.png)
 ## 0x70 参考链接
 [https://sp4n9x.github.io/2020/08/15/ret2_dl_runtime_resolve](https://sp4n9x.github.io/2020/08/15/ret2_dl_runtime_resolve%E8%AF%A6%E8%A7%A3/)
