@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "my-complex-post/babygame.md",
+                "file": "my-complex-post/easy login.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "babygame"
+              "title": "easy login"
             }
           }
         ],
@@ -195,7 +195,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -211,9 +211,12 @@
   },
   "active": "8080b0566e4c8f27",
   "lastOpenFiles": [
+    "my-complex-post/EZpython.md",
+    "my-complex-post/easy login.md",
     "my-complex-post/chuantongxiangyan.md",
     "my-complex-post/babygame.md",
-    "my-complex-post/EZpython.md",
+    "my-complex-post/images/Pasted image 20260203182150.png",
+    "my-complex-post/images/Pasted image 20260203171902.png",
     "my-complex-post/ret2dlresolve.md",
     "my-complex-post/format_string.md",
     "my-complex-post/template/note attribute.md",
@@ -229,8 +232,6 @@
     "my-complex-post/images/14bbe1ff91354ee40824d7118122b4ef.png",
     "my-complex-post/images/Pasted image 20260127232142.png",
     "my-complex-post/images/Pasted image 20260127200755.png",
-    "my-complex-post/images/Pasted image 20260127200706.png",
-    "my-complex-post/images/Pasted image 20260120152434.png",
-    "my-complex-post/images/Pasted image 20260120150033.png"
+    "my-complex-post/images/Pasted image 20260127200706.png"
   ]
 }
