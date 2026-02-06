@@ -423,7 +423,7 @@ A：锁保护的数据结构可能已经处于“写了一半”的损坏状态�
 |**EOWNERDEAD**|锁的前任主人死了，你现在接管，但数据可能坏了|
 
 **正确的恢复流程**：   
-```
+```c
 int r = pthread_mutex_lock(&mtx);
   if (r == EOWNERDEAD) {    // 上一个线程死在临界区里
     repair_shared_data();              // 修复共享状态
