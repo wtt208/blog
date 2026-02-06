@@ -198,6 +198,10 @@ Q: res = requests.post(f"{target}/visit", json={"url": \"http://xxx/admin"})
 为什么flag不能通过 res.json({ flag: FLAG })泄露？  
 A:`/admin` 页面确实被机器人成功打开了 ,但 flag **只显示在机器人那个浏览器页面里**，不会自动发给你
 
+Q:为什么不能写一个恶意 HTML 页面让robot去访问窃取cookie?
+A:跨域的时候不能带cookie，浏览器默认开启
+
+
 ## 0x40 相关知识
 ### 1.res = requests.get()
 
@@ -253,5 +257,9 @@ res = requests.get(
 | `{ age: { $ne: 18 } }`             | age 不等于 18                |
 | `{ username: { $regex: "^adm" } }` | 查找 username 以 `adm` 开头的用户 |
 
+### 7.跨域带 cookie 条件
+- 前端开启 withCredentials
+- 服务端允许 Credentials
+- 且 Origin 不能是 *
 ## 0x50 参考链接
 [su-team](https://su-team.cn/post/alictf-su-2026-wu/?sessionid=#easy_login)
