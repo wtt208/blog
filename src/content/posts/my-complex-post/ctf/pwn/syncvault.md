@@ -359,7 +359,7 @@ Q:如果不要QUIT命令就会泄露不完0x1000个字节是为什么？
 ## 0x40 相关知识
 
 ### 1.set_robust_list
-set_robust_list(struct robust_list_head \*head, size_t len)：把当前线程的robust futex 链表头地址登记到内核
+set_robust_list(struct robust_list_head \*head, size_t len)：把当前线程的robust futex 链表头地址登记到内核  
  `struct robust_list_head *head`，这是**用户空间**里的一个结构体地址，current->robust_list = head
 ```c
 // 8B
@@ -388,11 +388,11 @@ struct robust_list_head {
 | ------- | ---------- | --- |
 | WAITERS | OWNER_DIED | TID |
 
-在线程 **异常退出**时
-do_exit()
- └── exit_robust_list()
-       └── 遍历你注册的 robust list
-             └── 修复所有还没解锁的 futex
+在线程 **异常退出**时  
+do_exit()  
+ └── exit_robust_list()  
+       └── 遍历你注册的 robust list  
+             └── 修复所有还没解锁的 futex  
 
 如果一个 futex 锁的 owner 线程死了：
 1. 内核找到这个 futex 的内存地址
@@ -412,9 +412,9 @@ TID wake_waiters();              // 唤醒正在等锁的线程
 ```
 
 2. 线程 B 这时来加锁
-线程 B 被唤醒后再次尝试获取锁，glibc 发现 futex 里有这个标志位`FUTEX_OWNER_DIED (0x40000000)`，于是 **不会当作正常加锁成功**，而是返回：`pthread_mutex_lock(...) → EOWNERDEAD`
-Q：为什么不直接当作成功？
-A：锁保护的数据结构可能已经处于“写了一半”的损坏状态，线程 A 挂掉时可能正在修改共享数据
+线程 B 被唤醒后再次尝试获取锁，glibc 发现 futex 里有这个标志位`FUTEX_OWNER_DIED (0x40000000)`，于是 **不会当作正常加锁成功**，而是返回：`pthread_mutex_lock(...) → EOWNERDEAD`  
+Q：为什么不直接当作成功？  
+A：锁保护的数据结构可能已经处于“写了一半”的损坏状态，线程 A 挂掉时可能正在修改共享数据  
 所以 pthread 设计成：
 
 |返回值|含义|
@@ -422,13 +422,14 @@ A：锁保护的数据结构可能已经处于“写了一半”的损坏状态�
 |0|正常加锁|
 |**EOWNERDEAD**|锁的前任主人死了，你现在接管，但数据可能坏了|
 
-**正确的恢复流程**
+**正确的恢复流程**：   
+```
 int r = pthread_mutex_lock(&mtx);
-if (r == EOWNERDEAD) {
-    // 上一个线程死在临界区里
+  if (r == EOWNERDEAD) {    // 上一个线程死在临界区里
     repair_shared_data();              // 修复共享状态
     pthread_mutex_consistent(&mtx);    // 告诉系统修好了
 }
+```
 
 ### 3.dup2(int oldfd, int newfd)
 把 oldfd 复制成 newfd，让 newfd 指向和 oldfd 一样的东西
