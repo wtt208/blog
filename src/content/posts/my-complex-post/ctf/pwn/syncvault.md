@@ -10,7 +10,7 @@ author: wtt
 draft: false
 date: 2026-02-06
 ---
-aliCTF 2026 pwn -syncvault，题目代码有很多，总体是实现一个关于SYNCVAULT协议的多线程网络服务器应用程序，通过栈溢出漏洞实现`set_robust_list` 系统调用进行任意内存写入
+aliCTF 2026 pwn -syncvault，题目代码有很多，总体是实现一个关于SYNCVAULT协议的多线程网络服务器应用程序，通过栈溢出漏洞控制futex_offset,从而实现`set_robust_list` 系统调用进行指定内存写
 ## 0x10 题目分析
 .BSS 
 ```c
